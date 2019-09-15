@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Helyfly</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"><!-- Template Basic Images End -->
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body> 
+    <header>
+      <div class="wrapper">
+        <div class="header__content">
+          <div class="logotype"> <img src="img/logotype.svg" alt="logo"></div>
+          <div class="header__telephone"><span>Телефон:</span><a href="#">8(800)-123-12-12</a></div>
+          <div class="header__city">Москва</div>
+          <div class="header__login"><a href="#"><img src="img/icons/person__icon.png" alt="login"></a></div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="wrapper">
+        <div class="banner__content">
+          <div class="banner__headline h1">  Эксклюзивная <span class="orange">фотосессия</span> при полете на вертолете</div>
+          <div class="banner__cost">
+            <div class="cost__text">Стоимость: </div>
+            <div class="cost__price">1500₽</div>
+          </div>
+          <div class="banner__button button"> 
+            <button id="openForm"> Забронировать место</button>
+          </div>
+        </div>
+        <div class="banner__form" id="bannerForm">
+          <div class="form__content">
+            <div class="form__wrapper">
+              <div class="form__close" id="closeForm"><img src="img/icons/close__icon.svg" alt=""></div>
+              <div class="form__title">   Бронирование</div>
+              <form action="" method="post" id="form">
+                <label for="formDate">Дата<span class="red">*</span></label>
+                <input type="date" name="date" placeholder="14.09.2018" id="formDate" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required>
+                <label for="formMail">Email<span class="red">*</span></label>
+                <input type="email" name="email" placeholder="Электронная почта" id="formMail" required>
+                <label for="formName">Имя<span class="red">*</span></label>
+                <input type="text" name="name" placeholder="Иван" id="formName" required>
+                <label for="formLastname">Фамилия<span class="red">*</span></label>
+                <input type="text" name="lastname" placeholder="Громов" id="formLastname" required>
+                <label for="formTelephone">Телефон<span class="red">*</span></label>
+                <input type="tel" name="telephone" placeholder="8 (987) 654-32-10" id="formTelephone" required>
+                <label for="card">Данные карты<span class="red">*</span></label>
+                <div class="card__details" id="card">
+                  <input type="number" name="card" placeholder="Номер карты" id="cardNumber" min="16" max="16" required>
+                  <input type="text" name="term" placeholder="Срок действия" id="cardDate" required>
+                  <input type="number" name="CVV" placeholder="CVV" id="cardCVV" min="3" max="3" required>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox">
+                  <label for="checkbox" id="checkboxLabel"></label><span>Я согласен с пользовательским соглашением и публичной офертой</span>
+                </div>
+                <div class="submit__button">
+                  <button type="submit">Забронировать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="session">
+      <div class="wrapper">
+        <div class="session__content">
+          <div class="session__left">
+            <div class="session__title h2">Фотосессия <br>в вертолете</div>
+            <div class="session__description">Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты</div>
+            <ul class="session__list">
+              <li>
+                <div class="icon"><img src="img/icons/clock__icon.svg" alt="Icon" loading="lazy"></div>
+                <div class="text">3 часа съемки</div>
+              </li>
+              <li>
+                <div class="icon"> <img src="img/icons/camera__icon.svg" alt="Icon" loading="lazy"></div>
+                <div class="text">Более 50 фотографий   </div>
+              </li>
+              <li>
+                <div class="icon"> <img src="img/icons/pin__icon.svg" alt="Icon" loading="lazy"></div>
+                <div class="text">Москва</div>
+              </li>
+              <li>
+                <div class="icon"> <img src="img/icons/bubles__icon.svg" alt="Icon" loading="lazy"></div>
+                <div class="text">Готовы ответить на любые вопросы</div>
+              </li>
+            </ul>
+            <div class="all__reviews session__reviews">
+              <div class="reviews__text">Более <b>50</b> отзывов с оценкой </div>
+              <ul class="reviews__stars">
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="session__right">
+            <div class="session__video">
+              <iframe id="iframe" title="Youtube video"></iframe>
+              <div class="session__image" id="videoImage"><img class="video__media" src="img/gallery__image-1.jpg" alt="Image 1" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="wrapper">
+        <div class="gallery__content">
+          <div class="gallery__title h3">Фотографии пакета:</div>
+          <div class="gallery__table owl-carousel">
+            <div class="gallery__image gallery__image-1"><img src="img/gallery__image-2.jpg" loading="lazy" alt="Image 1"></div>
+            <div class="gallery__image gallery__image-2"><img src="img/gallery__image-3.jpg" loading="lazy" alt="Image 2"></div>
+            <div class="gallery__image gallery__image-3"><img src="img/gallery__image-1.jpg" loading="lazy" alt="Image 3"></div>
+            <div class="gallery__image gallery__image-4"><img src="img/gallery__image-4.jpg" loading="lazy" alt="Image 4"></div>
+            <div class="gallery__image gallery__image-5"><img src="img/gallery__image-1.jpg" loading="lazy" alt="Image 5"></div>
+            <div class="gallery__image gallery__image-6"><img src="img/gallery__image-4.jpg" loading="lazy" alt="Image 6"></div>
+            <div class="gallery__image gallery__image-7"><img src="img/gallery__image-3.jpg" loading="lazy" alt="Image 7"></div>
+            <div class="gallery__image gallery__image-8"><img src="img/gallery__image-1.jpg" loading="lazy" alt="Image 8"></div>
+          </div>
+          <div class="show__button show__photos">
+            <button>Показать все фото</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="organization">
+      <div class="wrapper">
+        <div class="organization__content">       
+          <div class="organizator__info">
+            <div class="organizator__left">
+              <div class="organizator__title h3">Об организаторе:</div>
+              <div class="organizator__description">
+                <p>Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах.</p> 
+                <p>Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…</p>
+              </div>
+              <div class="show__button show__description">
+                <button>Читать еще</button>
+              </div>
+              <div class="program__title h3">Что я предоставлю:</div>
+              <div class="organizator__program">
+                <p>Встречу вас на машине после длительного перелёта.<br> Качественный подбор места и локации для вашей съемки. <br>При необходимости всегда возможно прерваться на обед/ужин. <br>Более <b>50</b> фотографий на выходе с обработкой и замечательные впечатления о Дубае !</p>
+              </div>
+              <div class="show__button show__program">
+                <button>Читать еще</button>
+              </div>
+            </div>
+            <div class="organizator__right">
+              <div class="organizator__profile">
+                <div class="organizator__image"><img src="img/avatar__image-1.png" alt="avatar" loading="lazy"></div>
+                <div class="organizator__name h3">Марина Иванова</div>
+                <div class="organizator__profession">Фотограф</div>
+                <div class="show__button show__profile">
+                  <button>Показать больше информации о фотографе</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="nearest">
+      <div class="wrapper">
+        <div class="nearest__content">
+          <div class="nearest__title h3">Доступная съемка <br> в ближайшее время:</div>
+          <div class="nearest__timetable">
+            <div class="timetable__date"><span>Пятница, <b>14</b> сентября</span></div>
+            <div class="timetable__intervals">
+              <div class="timetable__interval">
+                <div class="timetable__left">
+                  <div class="timetable__time">15:00 - 18:00</div>
+                  <div class="timetable__price">1500₽</div>
+                  <div class="timetable__suit">Осталось — 1 место</div>
+                </div>
+                <div class="timetable__right">
+                  <div class="timetable__button">
+                    <button>Выбрать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="timetable__interval">
+                <div class="timetable__left">
+                  <div class="timetable__time">19:00 - 22:00</div>
+                  <div class="timetable__price">1500₽</div>
+                  <div class="timetable__suit">Осталось — 1 место</div>
+                </div>
+                <div class="timetable__right">
+                  <div class="timetable__button">
+                    <button>Выбрать</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timetable__reviews all__reviews">
+              <div class="reviews__text">Более <b>50</b> отзывов с оценкой </div>
+              <ul class="reviews__stars">
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed8b5109c73fcae45eb25ba598f32cebabc8cc667e7b2818443b04a4a5c338a7&amp;amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+      <div class="wrapper">
+        <div class="map__content">
+          <div class="map__list">
+            <div class="list__item">
+              <div class="list__item-left">
+                <div class="item__number">1</div>
+              </div>
+              <div class="list__item-right">
+                <div class="item__title">Где встречаемся?</div>
+                <div class="item__description">Москва</div>
+              </div>
+            </div>
+            <div class="list__item">
+              <div class="list__item-left">
+                <div class="item__number">2</div>
+              </div>
+              <div class="list__item-right">
+                <div class="item__title">Время съемки</div>
+                <div class="item__description">3 часа</div>
+              </div>
+            </div>
+            <div class="list__item">
+              <div class="list__item-left">
+                <div class="item__number">3</div>
+              </div>
+              <div class="list__item-right">
+                <div class="item__title">Мест осталось:</div>
+                <div class="item__description">2 места</div>
+              </div>
+            </div>
+            <div class="list__item list__item-autor">
+              <div class="list__item-left">
+                <div class="item__image"><img src="img/avatar__image-1.png" alt="avatar" loading="lazy"></div>
+              </div>
+              <div class="list__item-right">
+                <div class="item__title">Мария Иванова</div>
+                <div class="item__description">Фотограф</div>
+                <div class="show__button show__author">
+                  <button>Показать больше информации</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="wrapper">
+        <div class="reviews__content">
+          <div class="reviews__title h3">Отзывы:</div>
+          <div class="reviews__list">
+            <div class="review review-1">
+              <div class="review__left">
+                <div class="review__image"><img src="img/avatar__image-2.png" alt="avatar" loading="lazy"></div>
+              </div>
+              <div class="review__right">
+                <div class="reviewer__name h3">Валерия Антонова</div>
+                <div class="reviewer__profession">Арт-директор</div>
+                <div class="review__assasment">
+                  <ul class="review__stars">
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                  </ul>
+                  <div class="review__notice">Супер! Я бы заказала съемку снова!</div>
+                </div>
+                <div class="review__text"> Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!</div>
+                <div class="review__date"> 27 Апреля, 2019г.</div>
+              </div>
+            </div>
+            <div class="review review-2">
+              <div class="review__left">
+                <div class="review__image"><img src="img/avatar__image-3.png" alt="avatar" loading="lazy"></div>
+              </div>
+              <div class="review__right">
+                <div class="reviewer__name h3">Виталий Петров</div>
+                <div class="reviewer__profession">Фотограф</div>
+                <div class="review__assasment">
+                  <ul class="review__stars">
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                  </ul>
+                  <div class="review__notice">Супер! Я бы заказал съемку снова!</div>
+                </div>
+                <div class="review__text"> Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная. Спасибо!</div>
+                <div class="review__date"> 19 Апреля, 2019г.</div>
+              </div>
+            </div>
+            <div class="review review-3">
+              <div class="review__left">
+                <div class="review__image"><img src="img/avatar__image-4.png" alt="avatar" loading="lazy"></div>
+              </div>
+              <div class="review__right">
+                <div class="reviewer__name h3">Джим Керри</div>
+                <div class="review__assasment">
+                  <ul class="review__stars">
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                    <li><img src="img/icons/star__icon.svg" alt="Star Icon"></li>
+                  </ul>
+                  <div class="review__notice">Супер! Я бы заказал съемку снова!</div>
+                </div>
+                <div class="review__text"> Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!</div>
+                <div class="review__date"> 11 Апреля, 2019г.</div>
+              </div>
+            </div>
+          </div>
+          <div class="show__button show__reviews">
+            <button>Показать Все (134)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="wrapper">
+        <footer>
+          <div class="footer__logotype"><a href="#"><img src="img/logotype.svg" alt="logotype"></a></div>
+          <ul class="footer__social">
+            <li><a href="#"><img src="img/icons/vk__icon.svg" alt="Icon vk" loading="lazy"></a></li>
+            <li><a href="#"><img src="img/icons/facebook__icon.svg" alt="Icon fb" loading="lazy"></a></li>
+            <li><a href="#"><img src="img/icons/instragram__icon.svg" alt="Icon inst" loading="lazy"></a></li>
+            <li>RU</li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+    <section class="copyright">
+      <div class="wrapper">
+        <div class="copyright__content">
+          <div class="copyright__icons">
+            <ul>
+              <li class="copyright__mastercard"><img src="img/icons/mastercard__icon.png" alt="mastercard" loading="lazy"></li>
+              <li class="copyright__visa"><img src="img/icons/visa__icon.png" alt="visa" loading="lazy"></li>
+              <li class="copyright__paypal"><img src="img/icons/paypal__icon.png" alt="paypal" loading="lazy"></li>
+            </ul>
+          </div>
+          <div class="copyright__text">    
+            <div class="copyright__support">Тех. поддержка: 8(800)700-00-00</div>
+            <div class="copyright__description">© <span class="uppercase">2018 HELYFLY</span>. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/scripts.min.js"></script>
+  </body>
+</html>
